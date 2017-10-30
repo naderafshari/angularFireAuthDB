@@ -26,7 +26,9 @@ export class AppComponent {
 }
 
 addUser() {
-  this.afs.collection('users').doc('userInfo').set({'firstName': this.firstName, 'lastName': this.lastName});  
+  this.afs.collection('users').doc('userInfo').set({'firstName': this.firstName, 
+                                                    'lastName': this.lastName
+                                                  });  
 }
 
 }
